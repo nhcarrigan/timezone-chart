@@ -11,7 +11,7 @@
     </p>
 
     <p>
-      <label for="timeZone"></label>
+      <label for="timeZone">Event Timezone:</label>
       <select id="timeZone" name="timeZone" ngModel>
         <option *ngFor="let zone of timeZones" [value]="zone.value">
           {{ zone.name }}
