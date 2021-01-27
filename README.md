@@ -1,9 +1,9 @@
-# Project Name
+# Timezone Chart
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-Project Description
+A basic application that generates a chart to display an event's start/end time in various timezones.
 
 ## Live Version
 

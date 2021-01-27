@@ -1,0 +1,31 @@
+<div>
+  <form (ngSubmit)="onSubmit(form.value)" #form='ngForm'>
+    <p>
+      <label for="startTime">Event Starts:</label>
+      <input id="startTime" name="startTime" type="datetime-local" ngModel required/>
+    </p>
+
+    <p>
+      <label for="endTime">Event Ends:</label>
+      <input id="endTime" name="endTime" type="datetime-local" ngModel required/>
+    </p>
+
+    <p>
+      <label for="timeZone"></label>
+      <select id="timeZone" name="timeZone" ngModel>
+        <option *ngFor="let zone of timeZones" [value]="zone.value">
+          {{ zone.name }}
+        </option>
+      </select>
+    </p>
+    <button type="submit">Display Times!</button>
+  </form>
+</div>
+
+<div class="error-box">
+  <span *ngIf='error'>{{error}}</span>
+</div>
+
+<div *ngIf='submitted'>
+  <p>This event starts on {{start.toString()}} and ends on {{end.toString()}}</p>
+</div>
