@@ -1,4 +1,38 @@
 input, select, button {
   color: #3a3240;
   background-color: moccasin;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 1.25rem;
+  float: right;
 }
+
+form{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+/* form p{
+  /* display: flex; */
+  /* justify-content: space-between;
+  font-size: large;
+  line-height: 1rem;
+  margin: 1rem;
+} */
+label{
+  font-size: large;
+  line-height: 2.5rem;
+  margin: 1rem;
+  float: left;
+}
+/* 
+input, select{
+  float: right;
+  vertical-align: middle;
+  margin-top: 1.5rem;
+  
+} */
