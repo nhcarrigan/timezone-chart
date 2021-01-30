@@ -1,4 +1,29 @@
 input, select, button {
   color: #3a3240;
-  background-color: #aea8d3;
+  background-color: moccasin;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 1.25rem;
+  float: right;
+}
+form{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+#final{
+  font-size:larger;
+  font-weight: bold;
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
+label{
+  font-size: large;
+  line-height: 2.5rem;
+  margin: 1rem;
+  float: left;
 }
