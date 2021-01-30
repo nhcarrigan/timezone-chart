@@ -7,7 +7,6 @@ input, select, button {
   margin-top: 1.25rem;
   float: right;
 }
-
 form{
   display: flex;
   justify-content: space-between;
@@ -16,23 +15,15 @@ form{
   margin: auto;
   margin-bottom: 2rem;
 }
-/* form p{
-  /* display: flex; */
-  /* justify-content: space-between;
-  font-size: large;
-  line-height: 1rem;
-  margin: 1rem;
-} */
+#final{
+  font-size:larger;
+  font-weight: bold;
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
 label{
   font-size: large;
   line-height: 2.5rem;
   margin: 1rem;
   float: left;
 }
-/* 
-input, select{
-  float: right;
-  vertical-align: middle;
-  margin-top: 1.5rem;
-  
-} */
