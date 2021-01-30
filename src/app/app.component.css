@@ -1,11 +1,9 @@
 .header{
  padding: 2rem;
- min-height: 10rem;
- background-color: moccasin;  
- color: #3a3240; 
+ background-color: moccasin;
+ color: #3a3240;
  margin-bottom: 2rem;
  text-align: center;
- line-height: 10rem;
  font-size: 3rem ;
 }
 #info{
