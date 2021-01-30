@@ -36,7 +36,7 @@ export const timezoneList = [
     offset: '-04:00',
   },
   {
-    name: "UTC-3:30 - St. John's",
+    name: `UTC-3:30 - St. John's`,
     offset: '-03:30',
   },
   {

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { timezoneList } from '../timezones';
 
 @Component({
@@ -15,7 +15,9 @@ export class FormComponent {
   error = 'Please submit the form above.';
   submitted = false;
 
-  onSubmit(formData: formDataInt) {
+  constructor() {}
+
+  onSubmit(formData: FormDataInt) {
     const { startTime, endTime, timeZone } = formData;
     console.log(formData);
 
@@ -26,12 +28,10 @@ export class FormComponent {
       this.end = new Date(`${startTime}${timeZone}`);
     }
   }
-
-  constructor() {}
 }
 
-interface formDataInt {
-  startTime: String;
-  endTime: String;
-  timeZone: String;
+interface FormDataInt {
+  startTime: string;
+  endTime: string;
+  timeZone: string;
 }
