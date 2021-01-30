@@ -1,15 +1,17 @@
-.header{
- padding: 2rem;
- min-height: 10rem;
- background-color: moccasin;  
- color: #3a3240; 
- margin-bottom: 2rem;
- text-align: center;
- line-height: 10rem;
- font-size: 3rem ;
+.header {
+  padding: 2rem;
+  background-color: #dfc0fa;
+  color: #3a3240;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 3rem;
 }
-#info{
-    font-size: larger;
-    line-height: 35px;
-    margin: 4rem auto 2rem auto;
+#info {
+  font-size: larger;
+  line-height: 35px;
+  margin: 4rem auto 2rem auto;
+}
+
+footer {
+  font-size: large;
 }

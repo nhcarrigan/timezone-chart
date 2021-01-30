@@ -1,29 +1,64 @@
-input, select, button {
+input,
+select,
+button {
   color: #3a3240;
-  background-color: moccasin;
+  background-color: #ad99bf;
   border: none;
   padding: 10px;
   border-radius: 4px;
   margin-top: 1.25rem;
   float: right;
+  font-size: large;
+  cursor: pointer;
 }
-form{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  max-width: 400px;
+
+.form-container {
+  max-width: 500px;
   margin: auto;
+  background-color: #dfc0fa;
+  padding-bottom: 2rem;
+  border-radius: 50px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   margin-bottom: 2rem;
 }
-#final{
-  font-size:larger;
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-direction: column;
+  max-width: 475px;
+  margin: auto;
+  padding: 25px 0px;
+}
+
+#final {
+  font-size: larger;
   font-weight: bold;
   margin-top: -15px;
   margin-bottom: 15px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
-label{
+
+label {
   font-size: large;
   line-height: 2.5rem;
   margin: 1rem;
   float: left;
+  color: #3a3240;
+}
+
+#final > p {
+  margin: 10px auto;
+}
+
+@media (max-width: 500px) {
+  label,
+  input,
+  select,
+  button {
+    font-size: medium;
+  }
 }

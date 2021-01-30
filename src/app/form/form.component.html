@@ -1,13 +1,25 @@
-<div>
-  <form (ngSubmit)="onSubmit(form.value)" #form='ngForm'>
+<div class="form-container">
+  <form (ngSubmit)="onSubmit(form.value)" #form="ngForm">
     <p>
       <label for="startTime">Event Starts:</label>
-      <input id="startTime" name="startTime" type="datetime-local" ngModel required/>
+      <input
+        id="startTime"
+        name="startTime"
+        type="datetime-local"
+        ngModel
+        required
+      />
     </p>
 
     <p>
       <label for="endTime">Event Ends:</label>
-      <input id="endTime" name="endTime" type="datetime-local" ngModel required/>
+      <input
+        id="endTime"
+        name="endTime"
+        type="datetime-local"
+        ngModel
+        required
+      />
     </p>
 
     <p>
@@ -23,9 +35,12 @@
 </div>
 
 <div class="error-box">
-  <span *ngIf='error'>{{error}}</span>
+  <span *ngIf="error">{{ error }}</span>
 </div>
 
-<div *ngIf='submitted' id="final">
-  <p>This event starts on {{start.toString()}} and ends on {{end.toString()}}</p>
+<div *ngIf="submitted" id="final">
+  <p>This event starts on:</p>
+  <p>{{ start.toString() }}</p>
+  <p>and ends on</p>
+  <p>{{ end.toString() }}</p>
 </div>
