@@ -2,21 +2,34 @@ input,
 select,
 button {
   color: #3a3240;
-  background-color: moccasin;
+  background-color: #ad99bf;
   border: none;
   padding: 10px;
   border-radius: 4px;
   margin-top: 1.25rem;
   float: right;
+  font-size: large;
+  cursor: pointer;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: auto;
+  background-color: #dfc0fa;
+  padding-bottom: 2rem;
+  border-radius: 50px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2rem;
 }
 
 form {
   display: flex;
   justify-content: space-between;
+  align-content: space-between;
   flex-direction: column;
-  max-width: 400px;
+  max-width: 475px;
   margin: auto;
-  margin-bottom: 2rem;
+  padding: 25px 0px;
 }
 
 #final {
@@ -34,8 +47,18 @@ label {
   line-height: 2.5rem;
   margin: 1rem;
   float: left;
+  color: #3a3240;
 }
 
 #final > p {
   margin: 10px auto;
+}
+
+@media (max-width: 500px) {
+  label,
+  input,
+  select,
+  button {
+    font-size: medium;
+  }
 }
