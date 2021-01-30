@@ -1,4 +1,6 @@
-input, select, button {
+input,
+select,
+button {
   color: #3a3240;
   background-color: moccasin;
   border: none;
@@ -7,7 +9,8 @@ input, select, button {
   margin-top: 1.25rem;
   float: right;
 }
-form{
+
+form {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -15,15 +18,24 @@ form{
   margin: auto;
   margin-bottom: 2rem;
 }
-#final{
-  font-size:larger;
+
+#final {
+  font-size: larger;
   font-weight: bold;
   margin-top: -15px;
   margin-bottom: 15px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
-label{
+
+label {
   font-size: large;
   line-height: 2.5rem;
   margin: 1rem;
   float: left;
+}
+
+#final > p {
+  margin: 10px auto;
 }
