@@ -9,7 +9,7 @@ on:
 
 jobs:
   ci:
-    name: Lint and Build
+    name: Lint / Build / Test
     runs-on: ubuntu-latest
 
     strategy:
