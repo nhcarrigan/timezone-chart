@@ -43,12 +43,16 @@ describe('FormComponent', () => {
     const startDate = compiled.querySelector('#startTime');
     expect(startDate).toBeTruthy('start date element did not render');
     expect(startDate.type).toBe(
-      'datetime-local',
-      'start date element does not have datetime-local type'
+      'text',
+      'start date element does not have text type'
     );
     expect(startDate.name).toBe(
       'startTime',
       'start date element does not have startTime name'
+    );
+    expect(startDate.placeholder).toBe(
+      '12/24/2020 10:00:00',
+      'start date element does not have correct placeholder'
     );
   });
 
@@ -56,12 +60,16 @@ describe('FormComponent', () => {
     const endDate = compiled.querySelector('#endTime');
     expect(endDate).toBeTruthy('end date element did not render');
     expect(endDate.type).toBe(
-      'datetime-local',
-      'end date element does not have datetime-local type'
+      'text',
+      'end date element does not have text type'
     );
     expect(endDate.name).toBe(
       'endTime',
       'end date element does not have endTime name'
+    );
+    expect(endDate.placeholder).toBe(
+      '12/25/2020 14:30:00',
+      'end date element does not have correct placeholder'
     );
   });
 
@@ -95,8 +103,6 @@ describe('FormComponent', () => {
       label.getAttribute('for')
     );
     const inputId = Array.from(inputs).map((input) => input.getAttribute('id'));
-    console.log(labelFor);
-    console.log(inputId);
     expect(labelFor.toString()).toEqual(
       inputId.toString(),
       'the labels and inputs do not line up'
