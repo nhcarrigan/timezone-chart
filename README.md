@@ -6,6 +6,8 @@ A basic application that generates a chart to display an event's start/end time 
 
 This page is currently deployed. [View the live website.](https://www.nhcarrigan.com/timezone-chart)
 
+![A screenshot of the website, depicting a form with date-time inputs, a dropdown with timezone selection, and a submit button.](assets/sample.png)
+
 ## Feedback and Bugs
 
 If you have feedback or a bug report, please feel free to open a GitHub issue!
