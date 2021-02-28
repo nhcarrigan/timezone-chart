@@ -19,13 +19,21 @@ export class FormComponent {
 
   onSubmit(formData: FormDataInt) {
     const { startTime, endTime, timeZone } = formData;
-    console.log(formData);
 
     if (startTime && endTime && timeZone) {
       this.error = '';
       this.submitted = true;
       this.start = new Date(`${startTime}${timeZone}`);
-      this.end = new Date(`${startTime}${timeZone}`);
+      this.end = new Date(`${endTime}${timeZone}`);
+    }
+
+    if (
+      this.start.toString() === 'Invalid Date' ||
+      this.end.toString() === 'Invalid Date'
+    ) {
+      this.error = 'Please use a valid date format per the instructions above.';
+      this.submitted = false;
+      return;
     }
   }
 }

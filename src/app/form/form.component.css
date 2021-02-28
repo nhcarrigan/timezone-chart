@@ -9,6 +9,10 @@ button {
   margin-top: 1.25rem;
   float: right;
   font-size: large;
+}
+
+select,
+button {
   cursor: pointer;
 }
 
