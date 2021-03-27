@@ -15,12 +15,6 @@ import { FormComponent } from './form/form.component';
         showDialog: true,
       }),
     },
-    {
-      provide: APP_INITIALIZER,
-      useFactory: () => () => {},
-      deps: [Sentry.TraceService],
-      multi: true,
-    },
   ],
   bootstrap: [AppComponent],
 })
