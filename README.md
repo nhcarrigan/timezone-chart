@@ -2,6 +2,12 @@
 
 A basic application that generates a chart to display an event's start/end time in various timezones.
 
+![](https://img.shields.io/codeclimate/maintainability/nhcarrigan/timezone-chart)
+![](https://img.shields.io/codeclimate/issues/nhcarrigan/timezone-chart)
+![](https://img.shields.io/codeclimate/tech-debt/nhcarrigan/timezone-chart)
+![](https://img.shields.io/lgtm/alerts/github/nhcarrigan/timezone-chart)
+![](https://img.shields.io/lgtm/grade/javascript/github/nhcarrigan/timezone-chart)
+
 ## Live Version
 
 This page is currently deployed. [View the live website.](https://www.nhcarrigan.com/timezone-chart)
