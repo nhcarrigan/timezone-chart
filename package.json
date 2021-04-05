@@ -23,7 +23,7 @@
     "@angular/core": "11.2.8",
     "@angular/forms": "11.2.8",
     "@angular/platform-browser": "11.2.7",
-    "@angular/platform-browser-dynamic": "11.2.7",
+    "@angular/platform-browser-dynamic": "11.2.8",
     "@angular/router": "11.2.8",
     "@sentry/angular": "6.2.5",
     "@sentry/tracing": "6.2.5",
