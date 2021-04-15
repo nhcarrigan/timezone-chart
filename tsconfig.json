@@ -19,7 +19,8 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "resolveJsonModule": true,
   },
   "angularCompilerOptions": {
     "strictInjectionParameters": true,
