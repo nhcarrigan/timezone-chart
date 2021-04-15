@@ -2,6 +2,7 @@ import { TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { FormComponent } from './form/form.component';
+import { version } from '../../package.json';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -61,9 +62,10 @@ describe('AppComponent', () => {
     const compiled = fixture.debugElement.nativeElement;
     const footer = compiled.querySelector('footer');
     expect(footer).toBeTruthy();
-    const content = footer.querySelector('p');
-    expect(content.textContent).toContain('© 2021 Nicholas Carrigan');
-    const link = content.querySelector('a');
+    const content = footer.querySelectorAll('p');
+    expect(content[0].textContent).toBe(`App Version: ${version}`);
+    expect(content[1].textContent).toContain('© 2021 Nicholas Carrigan');
+    const link = content[1].querySelector('a');
     expect(link.textContent).toContain('Nicholas Carrigan');
     expect(link.href).toBe('https://www.nhcarrigan.com/');
   });
