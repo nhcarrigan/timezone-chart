@@ -16,10 +16,10 @@
     "npm": "^7.6.0"
   },
   "dependencies": {
-    "@angular/animations": "11.2.10",
+    "@angular/animations": "11.2.11",
     "@angular/common": "11.2.10",
     "@angular/compiler": "11.2.10",
-    "@angular/core": "11.2.10",
+    "@angular/core": "11.2.11",
     "@angular/forms": "11.2.10",
     "@angular/platform-browser": "11.2.10",
     "@angular/platform-browser-dynamic": "11.2.10",
