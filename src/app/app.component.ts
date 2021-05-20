@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { version } from '../../package.json';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +7,4 @@ import { version } from '../../package.json';
 })
 export class AppComponent {
   title = 'timezone-chart';
-  version = version;
 }
