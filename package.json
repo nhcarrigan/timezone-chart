@@ -26,7 +26,7 @@
     "@angular/router": "12.0.1",
     "@sentry/angular": "6.4.1",
     "@sentry/tracing": "6.4.1",
-    "angular-cli-ghpages": "1.0.0-rc.1",
+    "angular-cli-ghpages": "1.0.0-rc.2",
     "rxjs": "6.6.7",
     "tslib": "2.2.0",
     "zone.js": "0.11.4"
